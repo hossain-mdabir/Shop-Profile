@@ -10,12 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HomeView()
         }
-        .padding()
+        .navigationTitle("Plain Notes")
+        .navigationBarTitleDisplayMode(.automatic)
+        .navigationViewStyle(.stack)
     }
 }
 
@@ -24,3 +23,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
