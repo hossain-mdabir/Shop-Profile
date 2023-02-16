@@ -23,8 +23,11 @@ struct OrderListView: View {
             .font(.title3.weight(.semibold))
             
             HStack {
+                                
+                let datest = print("dddddddd \(fetchInfos.cd ?? "")")
 //                Text("\((fetchInfos.cd ?? "").roundTripDate(style: .full) ?? "")")
-                Text("\(fetchInfos.cd ?? "")")
+                Text(formattedDate(dateStr: fetchInfos.cd ?? ""))
+                Text(fetchInfos.cd ?? "")
                 
                 Spacer()
                 

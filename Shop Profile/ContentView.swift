@@ -13,7 +13,7 @@ struct ContentView: View {
             ShopProfileView()
         }
         .navigationTitle("Shop Profile")
-        .navigationBarTitleDisplayMode(.automatic)
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 

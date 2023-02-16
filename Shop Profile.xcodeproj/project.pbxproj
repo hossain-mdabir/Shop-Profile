@@ -16,6 +16,9 @@
 		1022FD65299ED30600DB1071 /* LoadingAnimationCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD64299ED30600DB1071 /* LoadingAnimationCircle.swift */; };
 		1022FD66299ED30600DB1071 /* LoadingAnimationCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD64299ED30600DB1071 /* LoadingAnimationCircle.swift */; };
 		1022FD67299ED30600DB1071 /* LoadingAnimationCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD64299ED30600DB1071 /* LoadingAnimationCircle.swift */; };
+		1022FD6A299EE42300DB1071 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD69299EE42300DB1071 /* DateFormatter.swift */; };
+		1022FD6B299EE42300DB1071 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD69299EE42300DB1071 /* DateFormatter.swift */; };
+		1022FD6C299EE42300DB1071 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD69299EE42300DB1071 /* DateFormatter.swift */; };
 		105233FD298C372700DA2897 /* Shop_ProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105233FC298C372700DA2897 /* Shop_ProfileApp.swift */; };
 		105233FF298C372700DA2897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105233FE298C372700DA2897 /* ContentView.swift */; };
 		10523401298C372800DA2897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10523400298C372800DA2897 /* Assets.xcassets */; };
@@ -68,6 +71,7 @@
 		1022FD5C299E0A4E00DB1071 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
 		1022FD60299EB47B00DB1071 /* Api's.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api's.swift"; sourceTree = "<group>"; };
 		1022FD64299ED30600DB1071 /* LoadingAnimationCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAnimationCircle.swift; sourceTree = "<group>"; };
+		1022FD69299EE42300DB1071 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		105233F9298C372700DA2897 /* Shop Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		105233FC298C372700DA2897 /* Shop_ProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop_ProfileApp.swift; sourceTree = "<group>"; };
 		105233FE298C372700DA2897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1022FD68299EE40C00DB1071 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1022FD69299EE42300DB1071 /* DateFormatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		105233F0298C372700DA2897 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				10523458298D53AF00DA2897 /* Shop-Profile-Info.plist */,
+				1022FD68299EE40C00DB1071 /* Extensions */,
 				1052344C298D153900DA2897 /* ViewModels */,
 				10523443298D13AF00DA2897 /* Models */,
 				1052343E298D05B200DA2897 /* Colors */,
@@ -361,6 +374,7 @@
 				1052344E298D155A00DA2897 /* FetchInfos.swift in Sources */,
 				10523432298C3AD500DA2897 /* ShopProfileView.swift in Sources */,
 				10523445298D13CB00DA2897 /* ShopInfos.swift in Sources */,
+				1022FD6A299EE42300DB1071 /* DateFormatter.swift in Sources */,
 				1052343B298CF6BF00DA2897 /* Search.swift in Sources */,
 				1022FD5D299E0A4E00DB1071 /* OrderListView.swift in Sources */,
 				105233FF298C372700DA2897 /* ContentView.swift in Sources */,
@@ -376,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1022FD6B299EE42300DB1071 /* DateFormatter.swift in Sources */,
 				1022FD62299EB47B00DB1071 /* Api's.swift in Sources */,
 				1052340E298C372800DA2897 /* Shop_ProfileTests.swift in Sources */,
 				10523446298D13CB00DA2897 /* ShopInfos.swift in Sources */,
@@ -398,6 +413,7 @@
 				10523450298D155A00DA2897 /* FetchInfos.swift in Sources */,
 				10523434298C3AD500DA2897 /* ShopProfileView.swift in Sources */,
 				10523447298D13CB00DA2897 /* ShopInfos.swift in Sources */,
+				1022FD6C299EE42300DB1071 /* DateFormatter.swift in Sources */,
 				1052343D298CF6BF00DA2897 /* Search.swift in Sources */,
 				1022FD5F299E0A4E00DB1071 /* OrderListView.swift in Sources */,
 				1052341A298C372800DA2897 /* Shop_ProfileUITestsLaunchTests.swift in Sources */,
