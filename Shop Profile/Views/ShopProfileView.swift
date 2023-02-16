@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  ShopProfileView.swift
 //  Shop Profile
 //
 //  Created by Md Abir Hossain on 3/2/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ShopProfileView: View {
     
     @State var isConfirmed: Bool = true
     @State var isPartialDelivered: Bool = false
@@ -140,10 +140,16 @@ struct HomeView: View {
                 }
                 .padding(.horizontal, 20)
             }
+            
+            if fetchInfos.loading {
+                LoadingAnimationCircle()
+                Text("Please wait...")
+            }
+            
         }
         .onAppear(perform: {
             
-            let shopInfos = ShopInfos()
+            // Calling function to fetch data
             fetchInfos.getShopInfos()
             fetchInfos.getOrderInfos()
             
@@ -156,7 +162,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        ShopProfileView()
     }
 }
 

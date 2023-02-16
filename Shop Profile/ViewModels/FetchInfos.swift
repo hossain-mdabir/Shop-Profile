@@ -15,8 +15,13 @@ class FetchInfos: ObservableObject {
     @Published var shopInfos = ShopInfos()
     @Published var orderInfos: [OrderInfos] = []
     
+    @Published var loading: Bool = false
+    
     
     func getShopInfos() {
+        
+        // Loading starts
+        self.loading = true
         
         var shopInfo = ShopInfosPost()
         
@@ -46,8 +51,17 @@ class FetchInfos: ObservableObject {
                     
                     self.shopInfos = response
                     
+                    // Loading stops
+                    if !(response.shopName ?? "").isEmpty || response.shopName != nil {
+                        self.loading = false
+                    }
+                    
                     print("Shop response \(response)")
                 } catch {
+                    
+                    // Loading stops
+                    self.loading = false
+                    
                     print("Shop ERROR: \(error)")
                 }
                 
@@ -57,6 +71,9 @@ class FetchInfos: ObservableObject {
                 
             case .failure(let error):
                 
+                // Loading stops
+                self.loading = false
+                
                 print("Print Shop: \(error)")
             }
         }
@@ -64,6 +81,9 @@ class FetchInfos: ObservableObject {
     
     // MARK: - Order infos network call
     func getOrderInfos() {
+        
+        // Loading starts
+        self.loading = true
         
         var shopInfo = ShopInfosPost()
         
@@ -96,9 +116,15 @@ class FetchInfos: ObservableObject {
                     let response = try JSONDecoder().decode([OrderInfos].self, from: value)
                     
                     let list = response
-                    for li in list ?? [] {
+                    
+                    for li in list {
                         self.updateItems(li)
                         print("Order : DEBUG DATA \(li.totalValue)")
+                    }
+                    
+                    // Loading stops
+                    if !response.isEmpty || response[0].statusID != nil {
+                        self.loading = false
                     }
                     
 //                    for res in response {
@@ -107,6 +133,10 @@ class FetchInfos: ObservableObject {
                     
                     print("Order response \(response)")
                 } catch {
+                    
+                    // Loading stops
+                    self.loading = false
+                    
                     print("Order ERROR: \(error)")
                 }
                 
@@ -115,6 +145,9 @@ class FetchInfos: ObservableObject {
                 print ("Order : \(response)")
                 
             case .failure(let error):
+                
+                    // Loading stops
+                    self.loading = false
                 
                 print("Print Order: \(error)")
             }
