@@ -9,8 +9,8 @@ import Foundation
 
 
 struct ShopInfosPost: Codable {
-    var UserID: Int?
-    var CompanyID: Int?
-    var ShopFK: Int?
-    var StatusID: Int?
+    var UserID: Int? = nil
+    var CompanyID: Int? = nil
+    var ShopFK: Int? = nil
+    var StatusID: Int? = nil
 }

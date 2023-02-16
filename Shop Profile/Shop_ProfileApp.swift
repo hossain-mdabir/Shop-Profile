@@ -11,7 +11,10 @@ import SwiftUI
 struct Shop_ProfileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
+            .navigationViewStyle(.stack)
         }
     }
 }

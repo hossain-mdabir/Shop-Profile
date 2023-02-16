@@ -12,9 +12,8 @@ struct ContentView: View {
         VStack {
             HomeView()
         }
-        .navigationTitle("Plain Notes")
+        .navigationTitle("Shop Profile")
         .navigationBarTitleDisplayMode(.automatic)
-        .navigationViewStyle(.stack)
     }
 }
 

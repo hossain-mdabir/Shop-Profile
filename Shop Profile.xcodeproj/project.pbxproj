@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1022FD5D299E0A4E00DB1071 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD5C299E0A4E00DB1071 /* OrderListView.swift */; };
+		1022FD5E299E0A4E00DB1071 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD5C299E0A4E00DB1071 /* OrderListView.swift */; };
+		1022FD5F299E0A4E00DB1071 /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD5C299E0A4E00DB1071 /* OrderListView.swift */; };
+		1022FD61299EB47B00DB1071 /* Api's.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD60299EB47B00DB1071 /* Api's.swift */; };
+		1022FD62299EB47B00DB1071 /* Api's.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD60299EB47B00DB1071 /* Api's.swift */; };
+		1022FD63299EB47B00DB1071 /* Api's.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD60299EB47B00DB1071 /* Api's.swift */; };
 		105233FD298C372700DA2897 /* Shop_ProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105233FC298C372700DA2897 /* Shop_ProfileApp.swift */; };
 		105233FF298C372700DA2897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105233FE298C372700DA2897 /* ContentView.swift */; };
 		10523401298C372800DA2897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10523400298C372800DA2897 /* Assets.xcassets */; };
@@ -56,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1022FD5C299E0A4E00DB1071 /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		1022FD60299EB47B00DB1071 /* Api's.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api's.swift"; sourceTree = "<group>"; };
 		105233F9298C372700DA2897 /* Shop Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		105233FC298C372700DA2897 /* Shop_ProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop_ProfileApp.swift; sourceTree = "<group>"; };
 		105233FE298C372700DA2897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 		10523448298D13DE00DA2897 /* OrderInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfos.swift; sourceTree = "<group>"; };
 		1052344D298D155A00DA2897 /* FetchInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInfos.swift; sourceTree = "<group>"; };
 		10523451298D189D00DA2897 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		10523458298D53AF00DA2897 /* Shop-Profile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shop-Profile-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,7 @@
 		105233FB298C372700DA2897 /* Shop Profile */ = {
 			isa = PBXGroup;
 			children = (
+				10523458298D53AF00DA2897 /* Shop-Profile-Info.plist */,
 				1052344C298D153900DA2897 /* ViewModels */,
 				10523443298D13AF00DA2897 /* Models */,
 				1052343E298D05B200DA2897 /* Colors */,
@@ -174,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				1052343A298CF6BF00DA2897 /* Search.swift */,
+				1022FD5C299E0A4E00DB1071 /* OrderListView.swift */,
 			);
 			path = SubVIews;
 			sourceTree = "<group>";
@@ -200,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				1052344D298D155A00DA2897 /* FetchInfos.swift */,
+				1022FD60299EB47B00DB1071 /* Api's.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -345,9 +357,11 @@
 				10523432298C3AD500DA2897 /* HomeView.swift in Sources */,
 				10523445298D13CB00DA2897 /* ShopInfos.swift in Sources */,
 				1052343B298CF6BF00DA2897 /* Search.swift in Sources */,
+				1022FD5D299E0A4E00DB1071 /* OrderListView.swift in Sources */,
 				105233FF298C372700DA2897 /* ContentView.swift in Sources */,
 				10523449298D13DE00DA2897 /* OrderInfos.swift in Sources */,
 				105233FD298C372700DA2897 /* Shop_ProfileApp.swift in Sources */,
+				1022FD61299EB47B00DB1071 /* Api's.swift in Sources */,
 				10523452298D189D00DA2897 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,8 +370,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1022FD62299EB47B00DB1071 /* Api's.swift in Sources */,
 				1052340E298C372800DA2897 /* Shop_ProfileTests.swift in Sources */,
 				10523446298D13CB00DA2897 /* ShopInfos.swift in Sources */,
+				1022FD5E299E0A4E00DB1071 /* OrderListView.swift in Sources */,
 				10523441298D05C100DA2897 /* Colors.swift in Sources */,
 				1052343C298CF6BF00DA2897 /* Search.swift in Sources */,
 				10523433298C3AD500DA2897 /* HomeView.swift in Sources */,
@@ -376,9 +392,11 @@
 				10523434298C3AD500DA2897 /* HomeView.swift in Sources */,
 				10523447298D13CB00DA2897 /* ShopInfos.swift in Sources */,
 				1052343D298CF6BF00DA2897 /* Search.swift in Sources */,
+				1022FD5F299E0A4E00DB1071 /* OrderListView.swift in Sources */,
 				1052341A298C372800DA2897 /* Shop_ProfileUITestsLaunchTests.swift in Sources */,
 				1052344B298D13DE00DA2897 /* OrderInfos.swift in Sources */,
 				10523418298C372800DA2897 /* Shop_ProfileUITests.swift in Sources */,
+				1022FD63299EB47B00DB1071 /* Api's.swift in Sources */,
 				10523454298D189D00DA2897 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +541,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Shop Profile/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shop-Profile-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -551,6 +570,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Shop Profile/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shop-Profile-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
