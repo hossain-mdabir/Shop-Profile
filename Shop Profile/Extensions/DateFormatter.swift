@@ -54,11 +54,12 @@ extension View {
     func formattedDate(dateStr: String) -> String {
         if !dateStr.isEmpty {
             let dateFormatter = DateFormatter()
+            
             dateFormatter.calendar = Calendar(identifier: .gregorian)
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-            let newDate = dateFormatter.date(from: dateStr)
-            dateFormatter.setLocalizedDateFormatFromTemplate("d MMM yy")
-            return dateFormatter.string(from: newDate!)
+            dateFormatter.dateFormat = "MMM d, yyyy"  // yyyy-MM-dd 'T'HH: mm:ssZ
+            let newDate = dateFormatter.date(from: dateStr) ?? Date()
+            dateFormatter.setLocalizedDateFormatFromTemplate("yyyy-MM-dd 'T'HH: mm:ssZ")
+            return dateFormatter.string(from: newDate)
         } else {
             return ""
         }

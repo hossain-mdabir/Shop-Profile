@@ -19,6 +19,9 @@
 		1022FD6A299EE42300DB1071 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD69299EE42300DB1071 /* DateFormatter.swift */; };
 		1022FD6B299EE42300DB1071 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD69299EE42300DB1071 /* DateFormatter.swift */; };
 		1022FD6C299EE42300DB1071 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022FD69299EE42300DB1071 /* DateFormatter.swift */; };
+		1022FD71299EFAED00DB1071 /* Shop-Profile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1022FD70299EFAED00DB1071 /* Shop-Profile-Info.plist */; };
+		1022FD72299EFAED00DB1071 /* Shop-Profile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1022FD70299EFAED00DB1071 /* Shop-Profile-Info.plist */; };
+		1022FD73299EFAED00DB1071 /* Shop-Profile-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1022FD70299EFAED00DB1071 /* Shop-Profile-Info.plist */; };
 		105233FD298C372700DA2897 /* Shop_ProfileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105233FC298C372700DA2897 /* Shop_ProfileApp.swift */; };
 		105233FF298C372700DA2897 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105233FE298C372700DA2897 /* ContentView.swift */; };
 		10523401298C372800DA2897 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10523400298C372800DA2897 /* Assets.xcassets */; };
@@ -72,6 +75,7 @@
 		1022FD60299EB47B00DB1071 /* Api's.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Api's.swift"; sourceTree = "<group>"; };
 		1022FD64299ED30600DB1071 /* LoadingAnimationCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAnimationCircle.swift; sourceTree = "<group>"; };
 		1022FD69299EE42300DB1071 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		1022FD70299EFAED00DB1071 /* Shop-Profile-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Shop-Profile-Info.plist"; sourceTree = "<group>"; };
 		105233F9298C372700DA2897 /* Shop Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shop Profile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		105233FC298C372700DA2897 /* Shop_ProfileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop_ProfileApp.swift; sourceTree = "<group>"; };
 		105233FE298C372700DA2897 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,7 +93,6 @@
 		10523448298D13DE00DA2897 /* OrderInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfos.swift; sourceTree = "<group>"; };
 		1052344D298D155A00DA2897 /* FetchInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchInfos.swift; sourceTree = "<group>"; };
 		10523451298D189D00DA2897 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		10523458298D53AF00DA2897 /* Shop-Profile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Shop-Profile-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,7 @@
 		105233F0298C372700DA2897 = {
 			isa = PBXGroup;
 			children = (
+				1022FD70299EFAED00DB1071 /* Shop-Profile-Info.plist */,
 				105233FB298C372700DA2897 /* Shop Profile */,
 				1052340C298C372800DA2897 /* Shop ProfileTests */,
 				10523416298C372800DA2897 /* Shop ProfileUITests */,
@@ -149,7 +153,6 @@
 		105233FB298C372700DA2897 /* Shop Profile */ = {
 			isa = PBXGroup;
 			children = (
-				10523458298D53AF00DA2897 /* Shop-Profile-Info.plist */,
 				1022FD68299EE40C00DB1071 /* Extensions */,
 				1052344C298D153900DA2897 /* ViewModels */,
 				10523443298D13AF00DA2897 /* Models */,
@@ -344,6 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1022FD71299EFAED00DB1071 /* Shop-Profile-Info.plist in Resources */,
 				10523404298C372800DA2897 /* Preview Assets.xcassets in Resources */,
 				10523401298C372800DA2897 /* Assets.xcassets in Resources */,
 			);
@@ -353,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1022FD72299EFAED00DB1071 /* Shop-Profile-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1022FD73299EFAED00DB1071 /* Shop-Profile-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -545,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
